@@ -1,0 +1,170 @@
+/* ===== RESET Y BASE ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2c2c2c;
+    background-color: #f0f2f5;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 4px solid #4a90d9;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+header address {
+    font-style: normal;
+    font-size: 0.95rem;
+    color: #b0bec5;
+}
+
+header address a {
+    color: #4a90d9;
+    text-decoration: none;
+}
+
+header address a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ===== SECCIONES ===== */
+section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    border-left: 5px solid #4a90d9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+section h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* ===== RESUMEN ===== */
+#summary p {
+    color: #444;
+    font-size: 0.97rem;
+}
+
+/* ===== HABILIDADES ===== */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+#skills ul li {
+    background-color: #e8f0fe;
+    color: #1a1a2e;
+    border-radius: 20px;
+    padding: 0.35rem 1rem;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+/* ===== EXPERIENCIA Y EDUCACIÓN ===== */
+#experience article,
+#education article {
+    margin-bottom: 1rem;
+}
+
+#experience article:last-child,
+#education article:last-child {
+    margin-bottom: 0;
+}
+
+article h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.25rem;
+}
+
+article p {
+    font-size: 0.92rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+article ul {
+    list-style: disc;
+    padding-left: 1.4rem;
+    margin-top: 0.4rem;
+}
+
+article ul li {
+    font-size: 0.92rem;
+    color: #444;
+    margin-bottom: 0.2rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.82rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 200px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1.2rem 1.2rem;
+    }
+
+    #skills ul li {
+        font-size: 0.82rem;
+    }
+}
