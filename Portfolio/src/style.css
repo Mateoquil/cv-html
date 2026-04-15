@@ -19,6 +19,7 @@ header {
     color: #ffffff;
     text-align: center;
     padding: 2.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 header img {
@@ -46,12 +47,13 @@ header address {
     color: #b0bec5;
 }
 
-header address a {
+/* ===== LINKS ===== */
+a {
     color: #4a90d9;
     text-decoration: none;
 }
 
-header address a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -62,7 +64,7 @@ main {
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 /* ===== SECCIONES ===== */
@@ -71,7 +73,12 @@ section {
     border-radius: 10px;
     padding: 1.5rem 2rem;
     border-left: 5px solid #4a90d9;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
 }
 
 section h2 {
@@ -106,6 +113,11 @@ section h2 {
     padding: 0.35rem 1rem;
     font-size: 0.88rem;
     font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+#skills ul li:hover {
+    transform: translateY(-2px);
 }
 
 /* ===== EXPERIENCIA Y EDUCACIÓN ===== */
@@ -155,13 +167,13 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 200px) {
+@media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
     }
 
     section {
-        padding: 1.2rem 1.2rem;
+        padding: 1.2rem;
     }
 
     #skills ul li {
