@@ -121,13 +121,12 @@ section h2 {
 }
 
 /* ===== EXPERIENCIA Y EDUCACIÓN ===== */
-#experience article,
-#education article {
+
+#academic-experience article {
     margin-bottom: 1rem;
 }
 
-#experience article:last-child,
-#education article:last-child {
+#academic-experience article:last-child {
     margin-bottom: 0;
 }
 
