@@ -50,7 +50,7 @@ header address {
     color: #94a3b8;
 }
 
-/* ===== LINKS ===== */
+/* ===== LINKS AND BUTTONS ===== */
 a {
     color: #10b981; /* Tech green for hyperlinks */
     text-decoration: none;
@@ -60,6 +60,26 @@ a {
 a:hover {
     color: #34d399; /* Brighter green on hover */
     text-decoration: underline;
+}
+
+.btn-project {
+    display: inline-block;
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #34d399;
+    border: 1px solid #10b981;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.btn-project:hover {
+    background-color: #10b981;
+    color: #0f172a;
+    text-decoration: none;
+    transform: translateY(-1px);
 }
 
 /* ===== MAIN CONTENT ===== */
@@ -177,6 +197,13 @@ article ul li::before {
     font-size: 0.8rem;
 }
 
+/* ===== PERSONAL PROJECTS ===== */
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
@@ -199,5 +226,19 @@ footer {
 
     #skills ul li {
         font-size: 0.82rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #projects article {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Split into 2 columns on desktop */
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    #projects article img {
+        border-radius: 8px;
+        border: 1px solid #334155;
     }
 }
